@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script defer src="app.js"></script>
+	<title>ToDo App</title>
+</head>
+<body>
+  	<div class="container">
+		<h1 class="header">My ToDos</h1>
+		<div class="holder">
+			<p class="taskNumbers">NO TASK FOR THE DAY</p>
+		</div>
+		
+		<div class="main">
+			<ul id='task_lists' class="list">
+	
+			</ul>
+		</div>
+		<div>
+			<form action='' id="formInput" class="input">
+				<input id="addtoList" type="text" placeholder="what do you want to do?"><button class="add submit"><i class="fas fa-plus-circle"></i></button>
+			</forms>
+		</div>
+		
+	</div>
+
+	<template id="task-template">
+		<div class="listing">
+			<li class="list-items flex-1"></li>
+			<button class="done" ><i class="fas fa-check-circle"></i></button><button class="cancel"><i class="fas fa-trash-alt"></i></button>
+		</div>
+	</template>
+</body>
+</html>
